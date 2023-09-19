@@ -1,0 +1,156 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textwidth}{5.1in} % set width of text portion
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Kevin Speyer - Data Scientist}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+% \moveleft.5\hoffset\centerline{11\textsuperscript{th} May 1987}
+ \moveleft.5\hoffset\centerline{Argentinian / German}
+% \moveleft.5\hoffset\centerline{Gutenberg 240, Buenos Aires, Argentina}
+ \moveleft.5\hoffset\centerline{Buenos Aires, Argentina}
+% \moveleft.5\hoffset\centerline{Tel: +54 011 6208 9696 ; mail: speyer.kevin@gmail.com}
+ \moveleft.5\hoffset\centerline{speyer.kevin@gmail.com}
+
+
+\begin{resume}
+
+    \section{PROFESSIONAL EXPERIENCE} 
+    {\sl Sr. Data Scientist} at {\bf D24} \hfill 2022 - Present
+    \begin{itemize}  \itemsep -2pt %reduce space between items
+        \item Deployed a webapp to redirect deposits using predictive timeseries ML models, decreasing
+            manual intervension 80\%.
+        \item Developed a credit card fraud detection API using LightGBM, Flask, Docker and AWS, 
+            reducing chargebacks by 60\%.
+        \item Using 3rd party sport-events APIs and performing feature engineering, managed to 
+            reduce 10\% the mean error in our predictive cash-in models.
+        \item Built a Life-Time Value model to help our partners drive retargeting campaigns and maximize their ROI.
+        \item Performed a clustering analysis using k-means to understand the users behavior in our platform, 
+            leading to a redisign of the way we score payers.
+    \end{itemize}
+    {\sl Sr. Data Scientist (Lead Engineer)} at {\bf Jampp} \hfill 2020 - 2022
+    \begin{itemize}  \itemsep -2pt %reduce space between items
+        \item In charge of the module that controls the offering price of the
+            real-time bidder, increasing the spend from 92\% to 98\%
+            of the budget using control theory.
+%        \item Implemented an online mechanism to enhance the spend distribution 
+%            during a day.
+%        \item Implemented a second order descend mechanism to find an optimal bidding range,
+%            reducing manual intervention by 40\%.
+        \item Developed a nonparametric A/B testing platform that enabled the whole company to 
+            correctly assess the outcome of experiments for non-gaussian data. 
+%        \item Designed an online sampling algorithm to improve the uncapped
+%            costs and clicks estimations.
+        \item Constructed a dashboard to meassure the key spend metrics and monitor
+            efficency of services with Airflow and Superset.
+        \item Implemented a Machine Learning model to target devices looking at their
+            historical behavior (LTV), reducing cost per action up to 30\%.
+    \end{itemize}
+    {\sl Data Scientist} at {\bf Cybertec Sch\"onig \& Sch\"onig GmbH} \hfill 2018 - 2020
+    \begin{itemize}  \itemsep -2pt %reduce space between items
+        \item Designed and implemented a high performance genetic 
+            algorithm to optimize the use of resources in the meat industry, increasing revenue 25\%.
+        \item Developed a revenue management web app for the airline industry 
+            using a feedback control loop algorithm and clustering which automated fare prices updates.
+%        \item Researched a cost-effective way to reduce the amount of 
+%		     backup disks in warehouse, implementing ML models. 
+         \item Developed a theme specific text generator webapp retraing a LLM (GPT-2) fine tunned to 
+             texts scrapped from the web using Selenium, BeautifulSoup, Flask and Docker.
+        \item Implemented a Reinforcement Learning (Q-learning) algorithm 
+            to optimize a logistics problem.
+%		 \item Developed a dashboard in Redash to monitor critical performance metrics at Rappi
+    \end{itemize}
+		
+%    {\sl Database Admin.} at {\bf Cybertec Sch\"onig \& Sch\"onig GmbH} \hfill 9/2018 - 1/2019
+%	\begin{itemize}  \itemsep -2pt %reduce space between items
+%		 \item Provided consulting services to enhance performance and 
+%             monitor DDBB health at Rappi
+% Conducted an integral diagnose of the main problems in 
+%		 \item Conducted an integral diagnose of the main problems in 
+%			 core Databases regarding health and performance issues.
+%        \item Developed a series scripts to automatically 
+%		       clean up and maintain the principal Databases, 
+%			reducing dead-space from over 90\% to less than 10\%.  
+%        \item Created various Dashboards to monitor the most important
+%			health and performance metrics of the Databases. 
+%    \end{itemize}
+
+%        {\sl Teaching Assistant} at {\bf University of Buenos Aires}\hfill 3/2012 - 9/2018
+%		Physics Department, Faculty of Exacact and Natural Sciences 
+
+\section{EDUCATION} {\sl PhD in Computational Physics}  \hfill 2014 - 2019 \\
+                      % \sl will be bold italic in New Century Schoolbook (or
+	              % any postscript font) and just slanted in
+		      %	Computer Modern (default) font
+                ``Simulations of liquid flow confined by semiflexible 
+		polymer brushes", University of Buenos Aires, CNEA-CONICET  \\
+%                Supervisor: Dr. Claudio Pastorino \\ 
+%                Published 3 scientific articles in top journals in the field \\ 
+%		\\
+% 		{\sl Diploma in Physics (M.S. equivalent) }  \hfill 2006 - 2014 \\ 
+%		Average: 9.26 / 10 \\
+%		Faculty of Exacact and Natural Sciences, University of Buenos Aires
+
+ 
+    \section{TECH STACK} {\sl Languages \& Software:} Python (numpy, scipy, pandas, matplotlib, scikit-learn, skopt, Keras, TensorFlow, Cython, Selenium, Flask, FastAPI), SQL, Vue.js \\ \\ 
+    {\sl Infrastructure \& Environment:} Linux, git, AWS, Azure, Docker, Jenkins, Kubernetes \\
+               
+ 
+\section{LANGUAGES}  Spanish, English, German, Portuguese 
+
+%\section{INTERESTS}        
+%       \begin{itemize}  \itemsep -2pt %reduce space between items
+%        \item	Mathematical Modeling and High Performance Computing 
+%	\item   Statistical Analysis of Big Data and Machine Learning \\ 
+%	    	(see personal projects in www.github.com/kevo-speyer/) 
+%    	\item	Process Automation with single-board microcontrollers 
+%       \end{itemize}
+ 
+%\section{SCIENTIFIC \\ PUBLICATIONS}            
+%%       \begin{itemize}  \itemsep -2pt %reduce space between items
+%%        \item 
+%		       K. Speyer, C. Pastorino, ``Pressure responsive gating in 
+%		nanochannels coated by semiflexible polymer brushes", 
+%		       {\sl Soft Matter}, 2019 \\ \\ 
+%%	\item
+%		       K. Speyer, C. Pastorino, ``Droplet transport in a 
+%		nanochannel coated by hydrophobic semiflexible polymer 
+%		       brushes: the effect of chain stiffness", {\sl Langmuir},
+%		       2017 \\ \\
+%%	\item
+%		K. Speyer, C. Pastorino, ``Brushes of semiflexible polymers in 
+%		equilibrium and under flow in a super-hydrophobic regime", 
+%		       {\sl Soft Matter}, 2015 
+%%       \end{itemize}
+
+%\section{SCHOLARSHIPS}  {\sl Research Project} \hfill  5/2018 - 7/2018 \\
+%	German Academic Service Exchange
+%	(DAAD), University of G\"ottingen, Germany \\ \\ 
+%	{\sl PhD Studies} \hfill  4/2014 - 3/2019 \\
+%	National Scientific and Technical Research Council (CONICET) \\ \\
+%	{\sl Workshops} \hfill { 10/2016 \& 3/2016} \\
+%	International Centre for Theoretical Physics (ICTP) 
+%	to participate in High-Performance Computing Workshops in Trieste, Italy
+%	\begin{itemize}  \itemsep -2pt %reduce space between items
+%                 \item "Introductory School on Parallel Programming and Parallel 
+%			 Architecture for High-Performance Computing", ICTP, Italy
+%		 \item "4th Workshop on Advanced Techniques for Scientific 
+%			 Programming and Management of Open source Software 
+%			 Packages" , ICTP, Italy
+%	\end{itemize}
+
+
+
+\end{resume}
+\end{document}
+
+
+
+
