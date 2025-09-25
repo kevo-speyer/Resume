@@ -1,161 +1,60 @@
 % LaTeX resume using res.cls
 \documentclass[margin]{res}
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
 \setlength{\textwidth}{5.1in} % set width of text portion
 
 \begin{document}
 
-% Center the name over the entire width of resume:
- \moveleft.5\hoffset\centerline{\large\bf Kevin Speyer - Machine Learning Engineer}
-% Draw a horizontal line the whole width of resume:
- \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-% address begins here
-% Again, the address lines must be centered over entire width of resume:
-% \moveleft.5\hoffset\centerline{11\textsuperscript{th} May 1987}
- \moveleft.5\hoffset\centerline{Argentinian / German}
-% \moveleft.5\hoffset\centerline{Gutenberg 240, Buenos Aires, Argentina}
- \moveleft.5\hoffset\centerline{Buenos Aires, Argentina}
-% \moveleft.5\hoffset\centerline{Tel: +54 011 6208 9696 ; mail: speyer.kevin@gmail.com}
- \moveleft.5\hoffset\centerline{speyer.kevin@gmail.com}
-
+% Name & Contact
+\moveleft.5\hoffset\centerline{\large\bf Kevin Speyer — Machine Learning Engineer}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+\moveleft.5\hoffset\centerline{Argentinian / German}
+\moveleft.5\hoffset\centerline{Buenos Aires, Argentina}
+\moveleft.5\hoffset\centerline{speyer.kevin@gmail.com}
 
 \begin{resume}
 
-    \section{PROFESSIONAL EXPERIENCE} 
-    {\sl Sr. Machine Learning Engineer} at {\bf D24} \hfill 2022 - Present
-    \begin{itemize}  \itemsep -2pt %reduce space between items
-%        \item Deployed a webapp to redirect deposits using predictive timeseries ML models, decreasing
-%            manual intervension 80\%.
-        \item Deployed a webapp to redirect transactions using predictive time series ML models and evolutionary optimization algorithms,
-            decreasing manual intervension and cutting operational costs by 8\%.
-        \item Developed a credit card fraud prevention API using LightGBM, Flask, Docker and AWS, 
-            reducing chargebacks by 80\%.
-%        \item Using 3rd party sport-events APIs and performing feature engineering, managed to 
-%            reduce 10\% the mean error in our predictive cash-in models.
-        \item Built a Life-Time Value model to help our partners drive retargeting campaigns and maximize their ROI,
-            using DynamoDB and FasAPI.
-        \item Designed an API to perform real-time aggregations of user's historical data on multiple dimensions,
-            allowing to create various hard rules to prevent fraud.
-        \item Created a bot to resolve customer-experience tickets using an OCR and event-driven architecture, 
-            automating 60\% of the cases.
-    \end{itemize}
-    {\sl Sr. Machine Learning Engineer (Lead)} at {\bf Jampp} \hfill 2020 - 2022
-    \begin{itemize}  \itemsep -2pt %reduce space between items
-        \item In charge of the module that controls the offering price of the
-            real-time bidder, increasing the spend from 92\% to 98\%
-            of the budget using control theory.
-%        \item Implemented an online mechanism to enhance the spend distribution 
-%            during a day.
-%        \item Implemented a second order descend mechanism to find an optimal bidding range,
-%            reducing manual intervention by 40\%.
-        \item Developed a nonparametric A/B testing platform that enabled the whole company to 
-            correctly assess the outcome of experiments for non-gaussian data. 
-%        \item Designed an online sampling algorithm to improve the uncapped
-%            costs and clicks estimations.
-        \item Constructed a dashboard to measure the key spend metrics and monitor
-            efficiency of services with Airflow and Superset.
-        \item Implemented a Machine Learning model to target devices looking at their
-            historical behavior (LTV), reducing cost per action up to 30\%.
-    \end{itemize}
-    {\sl Machine Learning Engineer} at {\bf Cybertec Sch\"onig \& Sch\"onig GmbH} \hfill 2018 - 2020
-    \begin{itemize}  \itemsep -2pt %reduce space between items
-        \item Designed and implemented a high performance genetic 
-            algorithm to optimize the use of resources in the meat industry, increasing revenue 25\%.
-%        \item Developed a revenue management web app for the airline industry 
-%            using a feedback control loop algorithm and clustering which automated fare prices updates.
-%        \item Researched a cost-effective way to reduce the amount of 
-%		     backup disks in warehouse, implementing ML models. 
-         \item Developed a theme specific text generator webapp retraining a LLM (GPT-2) fine-tuned to 
-             texts scrapped from the web using Selenium, BeautifulSoup, Flask and Docker.
-        \item Implemented a Reinforcement Learning (Q-learning) algorithm 
-            to optimize a logistics problem with OR-Tools as benchmark.
-%		 \item Developed a dashboard in Redash to monitor critical performance metrics at Rappi
-    \end{itemize}
-		
-%    {\sl Database Admin.} at {\bf Cybertec Sch\"onig \& Sch\"onig GmbH} \hfill 9/2018 - 1/2019
-%	\begin{itemize}  \itemsep -2pt %reduce space between items
-%		 \item Provided consulting services to enhance performance and 
-%             monitor DDBB health at Rappi
-% Conducted an integral diagnose of the main problems in 
-%		 \item Conducted an integral diagnose of the main problems in 
-%			 core Databases regarding health and performance issues.
-%        \item Developed a series scripts to automatically 
-%		       clean up and maintain the principal Databases, 
-%			reducing dead-space from over 90\% to less than 10\%.  
-%        \item Created various Dashboards to monitor the most important
-%			health and performance metrics of the Databases. 
-%    \end{itemize}
+\section{PROFESSIONAL EXPERIENCE}
 
-%        {\sl Teaching Assistant} at {\bf University of Buenos Aires}\hfill 3/2012 - 9/2018
-%		Physics Department, Faculty of Exacact and Natural Sciences 
+{\sl Lead Machine Learning Engineer} at {\bf ZS} \hfill 2025 -- Present
+\begin{itemize} \itemsep -2pt
+    \item Built an LLM-based recommendation system to autocomplete clinical trial protocols using text embeddings, achieving 70\% precision.
+    \item Designed a knowledge graph–based similarity algorithm to rank clinical study documents by semantic distance.
+\end{itemize}
 
-\section{EDUCATION} {\sl PhD in Computational Physics}  \hfill 2014 - 2019 \\
-                      % \sl will be bold italic in New Century Schoolbook (or
-	              % any postscript font) and just slanted in
-		      %	Computer Modern (default) font
-                ``Simulations of liquid flow confined by semiflexible 
-		polymer brushes", University of Buenos Aires, CNEA-CONICET  \\
-%                Supervisor: Dr. Claudio Pastorino \\ 
-%                Published 3 scientific articles in top journals in the field \\ 
-%		\\
-% 		{\sl Diploma in Physics (M.S. equivalent) }  \hfill 2006 - 2014 \\ 
-%		Average: 9.26 / 10 \\
-%		Faculty of Exacact and Natural Sciences, University of Buenos Aires
+{\sl Senior Machine Learning Engineer} at {\bf D24} \hfill 2022 -- 2025
+\begin{itemize} \itemsep -2pt
+    \item Developed a transaction redirection system with predictive time-series ML and evolutionary optimization, reducing manual intervention and cutting operational costs by 8\%.
+    \item Built a LightGBM-based credit card fraud prevention API (Flask, Docker, AWS), reducing chargebacks by 80\%.
+    \item Created an LTV model (DynamoDB, FastAPI) to optimize partner retargeting campaigns.
+    \item Automated 60\% of customer ticket resolutions via an OCR-powered, event-driven bot.
+\end{itemize}
 
- 
-    \section{TECH STACK} {\sl Languages \& Software:} Python (numpy, scipy, pandas, matplotlib, scikit-learn, skopt, Keras, TensorFlow, Cython, Selenium, Flask, FastAPI), SQL, Vue.js \\ \\ 
-    {\sl Infrastructure \& Environment:} Linux, git, AWS, Azure, Docker, Jenkins, Kubernetes, Bitbucket Pipes \\
-               
- 
-\section{LANGUAGES}  Spanish, English, German, Portuguese 
+{\sl Senior Machine Learning Engineer (Lead)} at {\bf Jampp} \hfill 2020 -- 2022
+\begin{itemize} \itemsep -2pt
+    \item Led real-time bidder pricing module using control theory, increasing budget spend from 92\% to 98\%.
+    \item Built a nonparametric A/B testing platform for non-Gaussian data analysis.
+    \item Created Airflow/Superset dashboards and an LTV-based targeting model, reducing CPA by up to 30\%.
+\end{itemize}
 
-%\section{INTERESTS}        
-%       \begin{itemize}  \itemsep -2pt %reduce space between items
-%        \item	Mathematical Modeling and High Performance Computing 
-%	\item   Statistical Analysis of Big Data and Machine Learning \\ 
-%	    	(see personal projects in www.github.com/kevo-speyer/) 
-%    	\item	Process Automation with single-board microcontrollers 
-%       \end{itemize}
- 
-%\section{SCIENTIFIC \\ PUBLICATIONS}            
-%%       \begin{itemize}  \itemsep -2pt %reduce space between items
-%%        \item 
-%		       K. Speyer, C. Pastorino, ``Pressure responsive gating in 
-%		nanochannels coated by semiflexible polymer brushes", 
-%		       {\sl Soft Matter}, 2019 \\ \\ 
-%%	\item
-%		       K. Speyer, C. Pastorino, ``Droplet transport in a 
-%		nanochannel coated by hydrophobic semiflexible polymer 
-%		       brushes: the effect of chain stiffness", {\sl Langmuir},
-%		       2017 \\ \\
-%%	\item
-%		K. Speyer, C. Pastorino, ``Brushes of semiflexible polymers in 
-%		equilibrium and under flow in a super-hydrophobic regime", 
-%		       {\sl Soft Matter}, 2015 
-%%       \end{itemize}
+{\sl Machine Learning Engineer} at {\bf Cybertec Sch\"onig \& Sch\"onig GmbH} \hfill 2018 -- 2020
+\begin{itemize} \itemsep -2pt
+    \item Implemented a genetic algorithm for resource optimization in the meat industry, increasing revenue by 25\%.
+    \item Fine-tuned GPT-2 on domain-specific data for a custom text generation app.
+    \item Applied reinforcement learning (Q-learning) to logistics optimization, benchmarking with OR-Tools.
+\end{itemize}
 
-%\section{SCHOLARSHIPS}  {\sl Research Project} \hfill  5/2018 - 7/2018 \\
-%	German Academic Service Exchange
-%	(DAAD), University of G\"ottingen, Germany \\ \\ 
-%	{\sl PhD Studies} \hfill  4/2014 - 3/2019 \\
-%	National Scientific and Technical Research Council (CONICET) \\ \\
-%	{\sl Workshops} \hfill { 10/2016 \& 3/2016} \\
-%	International Centre for Theoretical Physics (ICTP) 
-%	to participate in High-Performance Computing Workshops in Trieste, Italy
-%	\begin{itemize}  \itemsep -2pt %reduce space between items
-%                 \item "Introductory School on Parallel Programming and Parallel 
-%			 Architecture for High-Performance Computing", ICTP, Italy
-%		 \item "4th Workshop on Advanced Techniques for Scientific 
-%			 Programming and Management of Open source Software 
-%			 Packages" , ICTP, Italy
-%	\end{itemize}
+\section{EDUCATION}
+{\sl PhD in Computational Physics} \hfill 2014 -- 2019 \\
+``Simulations of liquid flow confined by semiflexible polymer brushes'' \\
+University of Buenos Aires, CNEA--CONICET
 
+\section{TECH STACK}
+{\sl Languages \& Libraries:} Python (NumPy, SciPy, Pandas, Matplotlib, scikit-learn, scikit-optimize, Keras, TensorFlow, Cython, Selenium, Flask, FastAPI), SQL, Vue.js \\
+{\sl Infrastructure \& Tools:} Linux, Git, AWS, Azure, Docker, Jenkins, Kubernetes, Bitbucket Pipes
 
+\section{LANGUAGES}
+Spanish (native), English (fluent), German (fluent), Portuguese (intermediate)
 
 \end{resume}
 \end{document}
-
-
-
 
